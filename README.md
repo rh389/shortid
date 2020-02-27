@@ -1,4 +1,4 @@
-## shortid  [![Build Status](http://img.shields.io/travis/dylang/shortid.svg)](https://travis-ci.org/dylang/shortid) [![shortid](http://img.shields.io/npm/dm/shortid.svg)](https://www.npmjs.org/package/shortid)
+## shortid  [![Build Status](http://img.shields.io/travis/rh389/shortid.svg)](https://travis-ci.org/rh389/shortid) [![shortid](http://img.shields.io/npm/dm/@rh389/shortid.svg)](https://www.npmjs.org/package/@rh389/shortid)
 
 > Amazingly short non-sequential url-friendly unique id generator.
 
@@ -21,12 +21,14 @@ ShortId creates amazingly short non-sequential url-friendly unique ids.  Perfect
  * Works in Node, io.js, and web browsers.
  * Includes [Mocha](http://visionmedia.github.com/mocha/) tests.
 
+### shortid vs @rh389/shortid
+This fork was created due to https://github.com/dylang/shortid/issues/153, it will always maintain a uniqueness guarantee.
 
 
 ### Usage
 
 ```js
-var shortid = require('shortid');
+var shortid = require('@rh389/shortid');
 
 console.log(shortid.generate());
 //PPBqWA9
@@ -44,7 +46,7 @@ _id: {
 
 ### Browser Compatibility
 
-The best way to use `shortid` in the browser is via [browserify](http://browserify.org/) or [webpack](http://webpack.github.io/).
+The best way to use `@rh389/shortid` in the browser is via [browserify](http://browserify.org/) or [webpack](http://webpack.github.io/).
 
 These tools will automatically only include the files necessary for browser compatibility.
 
@@ -76,7 +78,7 @@ hwX6aOr7
 
 #### Real World Examples
 
-`shortId` was created for Node Knockout 2011 winner for Most Fun [Doodle Or Die](http://doodleordie.com).
+The original `shortId` was created for Node Knockout 2011 winner for Most Fun [Doodle Or Die](http://doodleordie.com).
 Millions of doodles have been saved with `shortId` filenames. Every log message gets a `shortId` to make it easy
 for us to look up later.
 
@@ -102,7 +104,7 @@ Here are some other projects that use shortId:
 
 ### API
 
-`var shortid = require('shortid');`
+`var shortid = require('@rh389/shortid');`
 
 ---------------------------------------
 
@@ -218,7 +220,7 @@ shortid.seed(1000);
 
 
 
-### About the Author
+### About the Original Author
 
 Hi! Thanks for checking out this project! My name is **Dylan Greene**. When not overwhelmed with my two young kids I enjoy contributing
 to the open source community. I'm also a tech lead at [Opower](http://opower.com). [![@dylang](https://img.shields.io/badge/github-dylang-green.svg)](https://github.com/dylang) [![@dylang](https://img.shields.io/badge/twitter-dylang-blue.svg)](https://twitter.com/dylang)

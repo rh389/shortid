@@ -1,7 +1,7 @@
 {
-  "name": "shortid",
+  "name": "@rh389/shortid",
   "version": "2.2.8",
-  "description": "Amazingly short non-sequential url-friendly unique id generator.",
+  "description": "Amazingly short non-sequential url-friendly unique id generator. Forked from dylang/shortid to restore broken uniqueness.",
   "main": "index.js",
   "scripts": {
     "build": "grunt build",
@@ -19,14 +19,14 @@
     "shortid",
     "tinyid"
   ],
-  "homepage": "https://github.com/dylang/shortid",
+  "homepage": "https://github.com/rh389/shortid",
   "author": {
     "name": "Dylan Greene",
     "email": "dylang@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dylang/shortid.git"
+    "url": "https://github.com/rh389/shortid.git"
   },
   "browser": {
     "./lib/util/cluster-worker-id.js": "./lib/util/cluster-worker-id-browser.js",
